@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    #vue-container{
+      width: 500px;
+      height: 300px;
+    }
+
+    .row{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script src="./vue.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="vue-container">
+    <div class="row">
+      <textarea style="height: 200px ; width: 100%" v-model="form.txt"></textarea>
+    </div>
+
+    <div class="row">
+      <button @click="submit">提交</button>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
